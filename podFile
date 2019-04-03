@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+target 'DouYuSwift' do
+  pod 'Alamofire' #网络请求
+  pod 'Kingfisher' #图片加载
+  pod 'RxSwift' #
+  pod 'Presentr' #弹出框
+  pod 'Moya' #
+  pod 'Material' #
+  pod 'MJRefresh' # 刷新控件
+  pod 'SVProgressHUD'
+  pod 'JPush' #极光推送
+  pod 'PromiseKit'
+  pod 'OpenCV'
+end
