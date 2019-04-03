@@ -6,7 +6,6 @@ target 'DouYuSwift' do
   pod 'Kingfisher' #图片加载
   pod 'RxSwift' #
   pod 'Presentr' #弹出框
-  pod 'Moya' #
   pod 'Material' #
   pod 'MJRefresh' # 刷新控件
   pod 'SVProgressHUD'
