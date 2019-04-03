@@ -13,4 +13,5 @@ target 'DouYuSwift' do
   pod 'JPush' #极光推送
   pod 'PromiseKit'
   pod 'OpenCV'
+  pod 'PGDatePicker'
 end
