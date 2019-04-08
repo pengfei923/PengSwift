@@ -16,6 +16,7 @@ let kScreenW = UIScreen.main.bounds.width
 
 let kScreenH = UIScreen.main.bounds.height
 
-
+let kSecretKey : String = "LvRIcEGStcHL2gEkie0vUjBoyt9UmYWG"
+let apiKey : String = "ODFGvzoTq7iropCxvhSFuMDX"
 
 

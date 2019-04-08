@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PGDatePicker
 class ProfileViewController: BaseViewController {
 
     override func viewDidLoad() {
@@ -46,20 +46,27 @@ extension ProfileViewController {
     }
     
     @objc func clickBtn(sender:UIButton) {
-        print("点击了打印button按钮\(sender.tag)")
-        let alert = UIAlertController(title: "hello", message: "helloKetty", preferredStyle: .alert)
-        let cancle = UIAlertAction(title: "取消", style: .cancel) { (cancle) in
-            print("点击了取消按钮")
-        }
+        let datePickManager = PGDatePickManager()
+        datePickManager.isShadeBackgroud = true
+        let datePicker = datePickManager.datePicker!
+        datePicker.datePickerMode = .date
+        datePicker.delegate = self
+        self.present(datePickManager, animated: false, completion: nil)
         
-        let sure = UIAlertAction(title: "确定", style: .default) { (sure) in
-            SVProgressHUD.showInfo(withStatus: "点击了提示按钮")
-            print("点击了确认按钮")
-        }
-        
-        alert.addAction(cancle)
-        alert.addAction(sure)
-        self .present(alert, animated: true, completion: nil)
+//        print("点击了打印button按钮\(sender.tag)")
+//        let alert = UIAlertController(title: "hello", message: "helloKetty", preferredStyle: .alert)
+//        let cancle = UIAlertAction(title: "取消", style: .cancel) { (cancle) in
+//            print("点击了取消按钮")
+//        }
+//
+//        let sure = UIAlertAction(title: "确定", style: .default) { (sure) in
+//            SVProgressHUD.showInfo(withStatus: "点击了提示按钮")
+//            print("点击了确认按钮")
+//        }
+//
+//        alert.addAction(cancle)
+//        alert.addAction(sure)
+//        self .present(alert, animated: true, completion: nil)
     }
     
     @objc func clickSureBtn(sender:UIButton) {
@@ -77,4 +84,11 @@ extension ProfileViewController {
         navigationController?.pushViewController(newProfileVC, animated: true)
     }
     
+}
+
+
+extension ProfileViewController:PGDatePickerDelegate {
+    func datePicker(_ datePicker: PGDatePicker!, didSelectDate dateComponents: DateComponents!) {
+        print("这里是我返回的信息\(dateComponents!)")
+    }
 }
