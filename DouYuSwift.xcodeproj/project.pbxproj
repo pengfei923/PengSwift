@@ -3,19 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA60C5F05FD8CAFF140E249D /* Pods_DouYuSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811F9D5E6270970C2E6B7C83 /* Pods_DouYuSwift.framework */; };
+		AA60C5F05FD8CAFF140E249D /* Pods_DouYuSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811F9D5E6270970C2E6B7C83 /* Pods_DouYuSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B20ABD2B2266C96C0002525D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20ABD2A2266C96B0002525D /* Operators.swift */; };
+		B20ABD32226715500002525D /* NewRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20ABD31226715500002525D /* NewRegisterViewController.swift */; };
+		B20ABD34226724C40002525D /* MJRefresh-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20ABD33226724C40002525D /* MJRefresh-Extension.swift */; };
+		B20ABD36226728540002525D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20ABD35226728540002525D /* NetworkService.swift */; };
+		B20ABD3822672C7E0002525D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20ABD3722672C7E0002525D /* ViewModel.swift */; };
 		B2301EAB2248BE2800CD23DD /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2301EAA2248BE2800CD23DD /* PageContentView.swift */; };
 		B2301EAD2248C06200CD23DD /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2301EAC2248C06200CD23DD /* UIColor-Extension.swift */; };
 		B2301EB02248CAC300CD23DD /* LiveNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2301EAE2248CAC300CD23DD /* LiveNormalTableViewCell.swift */; };
 		B2301EB12248CAC300CD23DD /* LiveNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2301EAF2248CAC300CD23DD /* LiveNormalTableViewCell.xib */; };
 		B2301EB42248DC1900CD23DD /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2301EB32248DC1900CD23DD /* NetworkTools.swift */; };
+		B2395B8222681452008F493C /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2395B8122681451008F493C /* SwiftNotice.swift */; };
+		B2617BF522656DCD00E53E98 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2617BF422656DCD00E53E98 /* Music.swift */; };
+		B2617BF82265721600E53E98 /* ReSwiftNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2617BF62265721600E53E98 /* ReSwiftNormalCell.swift */; };
+		B2617BF92265721600E53E98 /* ReSwiftNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2617BF72265721600E53E98 /* ReSwiftNormalCell.xib */; };
+		B2617BFB2265A59700E53E98 /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2617BFA2265A59700E53E98 /* UILabel-Extension.swift */; };
+		B26A674B22642A7800A6BA7E /* Supporting File in Resources */ = {isa = PBXBuildFile; fileRef = B26A674A22642A7800A6BA7E /* Supporting File */; };
+		B26A674D22644F4900A6BA7E /* UITextField-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26A674C22644F4900A6BA7E /* UITextField-Extension.swift */; };
+		B26A6756226458CA00A6BA7E /* ReSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26A6755226458CA00A6BA7E /* ReSwiftViewController.swift */; };
 		B26D072D2251C1C8006BA6E5 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D072C2251C1C8006BA6E5 /* ExtensionViewController.swift */; };
-		B26D072F2251F545006BA6E5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26D072E2251F545006BA6E5 /* CoreImage.framework */; };
-		B26D07312251F6A9006BA6E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26D07302251F6A9006BA6E5 /* AVFoundation.framework */; };
+		B26D072F2251F545006BA6E5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26D072E2251F545006BA6E5 /* CoreImage.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B26D07312251F6A9006BA6E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26D07302251F6A9006BA6E5 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B27C42402249B9AD0089D2C2 /* LiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C423F2249B9AD0089D2C2 /* LiveViewModel.swift */; };
 		B27C42422249BC610089D2C2 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C42412249BC610089D2C2 /* NSDate-Extension.swift */; };
 		B27C42442249C0800089D2C2 /* LiveNormalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C42432249C0800089D2C2 /* LiveNormalModel.swift */; };
@@ -69,11 +82,24 @@
 		5E2A64AD19021ED3BD9F5F91 /* Pods-DouYuSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuSwift.debug.xcconfig"; path = "Target Support Files/Pods-DouYuSwift/Pods-DouYuSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		6C9799D68B388BA3D7FAC828 /* Pods-DouYuSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuSwift.release.xcconfig"; path = "Target Support Files/Pods-DouYuSwift/Pods-DouYuSwift.release.xcconfig"; sourceTree = "<group>"; };
 		811F9D5E6270970C2E6B7C83 /* Pods_DouYuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20ABD2A2266C96B0002525D /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		B20ABD31226715500002525D /* NewRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterViewController.swift; sourceTree = "<group>"; };
+		B20ABD33226724C40002525D /* MJRefresh-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MJRefresh-Extension.swift"; sourceTree = "<group>"; };
+		B20ABD35226728540002525D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B20ABD3722672C7E0002525D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B2301EAA2248BE2800CD23DD /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		B2301EAC2248C06200CD23DD /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		B2301EAE2248CAC300CD23DD /* LiveNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNormalTableViewCell.swift; sourceTree = "<group>"; };
 		B2301EAF2248CAC300CD23DD /* LiveNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveNormalTableViewCell.xib; sourceTree = "<group>"; };
 		B2301EB32248DC1900CD23DD /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		B2395B8122681451008F493C /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		B2617BF422656DCD00E53E98 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Music.swift; path = DouYuSwift/Classes/Follow/ReSwiftVC/Controller/Music.swift; sourceTree = SOURCE_ROOT; };
+		B2617BF62265721600E53E98 /* ReSwiftNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftNormalCell.swift; sourceTree = "<group>"; };
+		B2617BF72265721600E53E98 /* ReSwiftNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReSwiftNormalCell.xib; sourceTree = "<group>"; };
+		B2617BFA2265A59700E53E98 /* UILabel-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel-Extension.swift"; sourceTree = "<group>"; };
+		B26A674A22642A7800A6BA7E /* Supporting File */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting File"; sourceTree = "<group>"; };
+		B26A674C22644F4900A6BA7E /* UITextField-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField-Extension.swift"; sourceTree = "<group>"; };
+		B26A6755226458CA00A6BA7E /* ReSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftViewController.swift; sourceTree = "<group>"; };
 		B26D072C2251C1C8006BA6E5 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		B26D072E2251F545006BA6E5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		B26D07302251F6A9006BA6E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -144,12 +170,127 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B20ABD2C2267151F0002525D /* NewRegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				B20ABD2D2267151F0002525D /* ViewModel */,
+				B20ABD2E2267151F0002525D /* Controller */,
+				B20ABD2F2267151F0002525D /* Model */,
+				B20ABD302267151F0002525D /* View */,
+			);
+			path = NewRegisterVC;
+			sourceTree = "<group>";
+		};
+		B20ABD2D2267151F0002525D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B20ABD3722672C7E0002525D /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B20ABD2E2267151F0002525D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B20ABD31226715500002525D /* NewRegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B20ABD2F2267151F0002525D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B20ABD302267151F0002525D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B2301EB22248D2F800CD23DD /* NetWorking */ = {
 			isa = PBXGroup;
 			children = (
 				B2301EB32248DC1900CD23DD /* NetworkTools.swift */,
+				B20ABD35226728540002525D /* NetworkService.swift */,
 			);
 			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		B2395B7D22680565008F493C /* SideMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2395B7E22680565008F493C /* Controller */,
+				B2395B7F22680565008F493C /* Model */,
+				B2395B8022680565008F493C /* View */,
+			);
+			path = SideMenuVC;
+			sourceTree = "<group>";
+		};
+		B2395B7E22680565008F493C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2395B7F22680565008F493C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2395B8022680565008F493C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B26A6750226458B400A6BA7E /* ReSwiftVC */ = {
+			isa = PBXGroup;
+			children = (
+				B26A6751226458B400A6BA7E /* ViewModel */,
+				B26A6752226458B400A6BA7E /* Controller */,
+				B26A6753226458B400A6BA7E /* Model */,
+				B26A6754226458B400A6BA7E /* View */,
+			);
+			path = ReSwiftVC;
+			sourceTree = "<group>";
+		};
+		B26A6751226458B400A6BA7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B26A6752226458B400A6BA7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B26A6755226458CA00A6BA7E /* ReSwiftViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B26A6753226458B400A6BA7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B26A6754226458B400A6BA7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2617BF62265721600E53E98 /* ReSwiftNormalCell.swift */,
+				B2617BF72265721600E53E98 /* ReSwiftNormalCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B26D07282251C1A8006BA6E5 /* ExtensionVC */ = {
@@ -217,6 +358,7 @@
 				B28647A6224871AA00F25E50 /* Classes */,
 				B28647942248636800F25E50 /* AppDelegate.swift */,
 				B28647982248636800F25E50 /* Main.storyboard */,
+				B26A674A22642A7800A6BA7E /* Supporting File */,
 				B286479B2248636900F25E50 /* Assets.xcassets */,
 				B286479D2248636900F25E50 /* LaunchScreen.storyboard */,
 				B28647A02248636900F25E50 /* Info.plist */,
@@ -254,6 +396,7 @@
 			children = (
 				B28647D42248A67300F25E50 /* Extension */,
 				B28647D92248AFBE00F25E50 /* Common.swift */,
+				B2395B8122681451008F493C /* SwiftNotice.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -261,6 +404,9 @@
 		B28647A9224871AB00F25E50 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				B2395B7D22680565008F493C /* SideMenuVC */,
+				B20ABD2C2267151F0002525D /* NewRegisterVC */,
+				B26A6750226458B400A6BA7E /* ReSwiftVC */,
 				B2D4180E225368190044A422 /* CollectionVC */,
 				B2D417FB2253353B0044A422 /* NewMainVC */,
 				B26D07282251C1A8006BA6E5 /* ExtensionVC */,
@@ -315,6 +461,7 @@
 		B28647B8224878B900F25E50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2617BF422656DCD00E53E98 /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -431,6 +578,7 @@
 		B28647D42248A67300F25E50 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B20ABD2A2266C96B0002525D /* Operators.swift */,
 				B28647D52248A69E00F25E50 /* UIBarButtonItem-Extension.swift */,
 				B2301EAC2248C06200CD23DD /* UIColor-Extension.swift */,
 				B27C42412249BC610089D2C2 /* NSDate-Extension.swift */,
@@ -443,6 +591,9 @@
 				B2EB955A224B133200D6DFE9 /* NSArray-Extension.swift */,
 				B2EB955C224B1F3100D6DFE9 /* Bool-Extension.swift */,
 				B2EB955E224B4A5900D6DFE9 /* UIViewController-Extension.swift */,
+				B26A674C22644F4900A6BA7E /* UITextField-Extension.swift */,
+				B2617BFA2265A59700E53E98 /* UILabel-Extension.swift */,
+				B20ABD33226724C40002525D /* MJRefresh-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -640,6 +791,7 @@
 				B286478E2248636800F25E50 /* Frameworks */,
 				B286478F2248636800F25E50 /* Resources */,
 				D9B94BB813230344133A7AA9 /* [CP] Embed Pods Frameworks */,
+				B2395B83226828BF008F493C /* Update App Version */,
 			);
 			buildRules = (
 			);
@@ -691,6 +843,8 @@
 			files = (
 				B2D41808225342240044A422 /* TopNormalCollectionCell.xib in Resources */,
 				B2301EB12248CAC300CD23DD /* LiveNormalTableViewCell.xib in Resources */,
+				B26A674B22642A7800A6BA7E /* Supporting File in Resources */,
+				B2617BF92265721600E53E98 /* ReSwiftNormalCell.xib in Resources */,
 				B2D4180422533A2E0044A422 /* NewMainTopCollectionView.xib in Resources */,
 				B28647B32248777F00F25E50 /* Profile.storyboard in Resources */,
 				B27C424E224A03800089D2C2 /* FollowTopView.xib in Resources */,
@@ -730,7 +884,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9B94BB813230344133A7AA9 /* [CP] Embed Pods Frameworks */ = {
+		B2395B83226828BF008F493C /* Update App Version */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -738,34 +892,27 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DouYuSwift/Pods-DouYuSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
-				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
-				"${BUILT_PRODUCTS_DIR}/PGDatePicker/PGDatePicker.framework",
-				"${BUILT_PRODUCTS_DIR}/PGPickerView/PGPickerView.framework",
-				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "Update App Version";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PGDatePicker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PGPickerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "versionNumber=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nsed -i bak -e \"/userLabel=\\\"AppVersion\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"版本：$versionNumber\\\"/\" $PROJECT_DIR/DouYuSwift/Base.lproj/LaunchScreen.storyboard\n";
+		};
+		D9B94BB813230344133A7AA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DouYuSwift/Pods-DouYuSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DouYuSwift/Pods-DouYuSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -779,21 +926,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2617BF522656DCD00E53E98 /* Music.swift in Sources */,
 				B28647D82248AE6D00F25E50 /* PageTitleView.swift in Sources */,
 				B2FE8CEB224C7D6C004C7AE9 /* WelcomeViewController.swift in Sources */,
 				B2EB9559224B131C00D6DFE9 /* NSString-Extension.swift in Sources */,
 				B28647952248636800F25E50 /* AppDelegate.swift in Sources */,
 				B28647CA22487ACC00F25E50 /* LiveViewController.swift in Sources */,
 				B2D4180D225350CD0044A422 /* BannerModel.swift in Sources */,
+				B2617BF82265721600E53E98 /* ReSwiftNormalCell.swift in Sources */,
 				B27C424A224A01290089D2C2 /* UIView-Extension.swift in Sources */,
+				B2617BFB2265A59700E53E98 /* UILabel-Extension.swift in Sources */,
 				B2EB956B224B600100D6DFE9 /* BaseViewController.swift in Sources */,
 				B2301EAB2248BE2800CD23DD /* PageContentView.swift in Sources */,
 				B2D41800225335610044A422 /* NewMainViewController.swift in Sources */,
+				B20ABD36226728540002525D /* NetworkService.swift in Sources */,
 				B2D4180222533A200044A422 /* NewMainTopCollectionView.swift in Sources */,
+				B2395B8222681452008F493C /* SwiftNotice.swift in Sources */,
 				B28647CE22487AEE00F25E50 /* ProfileViewController.swift in Sources */,
+				B20ABD32226715500002525D /* NewRegisterViewController.swift in Sources */,
+				B26A674D22644F4900A6BA7E /* UITextField-Extension.swift in Sources */,
 				B28647DA2248AFBE00F25E50 /* Common.swift in Sources */,
 				B2EB955F224B4A5900D6DFE9 /* UIViewController-Extension.swift in Sources */,
 				B27C42402249B9AD0089D2C2 /* LiveViewModel.swift in Sources */,
+				B20ABD2B2266C96C0002525D /* Operators.swift in Sources */,
 				B2EB9557224B130600D6DFE9 /* NSDictionary-Extension.swift in Sources */,
 				B2FE8CED224CA290004C7AE9 /* MainTabberViewController.swift in Sources */,
 				B28647BB2248790900F25E50 /* HomeViewController.swift in Sources */,
@@ -802,6 +957,7 @@
 				B2EA8BB1224DC20100440F0E /* OCFaceViewController.mm in Sources */,
 				B27C42442249C0800089D2C2 /* LiveNormalModel.swift in Sources */,
 				B27C42422249BC610089D2C2 /* NSDate-Extension.swift in Sources */,
+				B20ABD3822672C7E0002525D /* ViewModel.swift in Sources */,
 				B2EB955B224B133200D6DFE9 /* NSArray-Extension.swift in Sources */,
 				B28647CC22487ADC00F25E50 /* FollowViewController.swift in Sources */,
 				B2D41807225342240044A422 /* TopNormalCollectionCell.swift in Sources */,
@@ -809,6 +965,7 @@
 				B2EB955D224B1F3100D6DFE9 /* Bool-Extension.swift in Sources */,
 				B27C4256224A20700089D2C2 /* UIButton-Extension.swift in Sources */,
 				B28647D62248A69E00F25E50 /* UIBarButtonItem-Extension.swift in Sources */,
+				B20ABD34226724C40002525D /* MJRefresh-Extension.swift in Sources */,
 				B2EB9565224B4DAF00D6DFE9 /* NewProfileViewController.swift in Sources */,
 				B26D072D2251C1C8006BA6E5 /* ExtensionViewController.swift in Sources */,
 				B2301EB42248DC1900CD23DD /* NetworkTools.swift in Sources */,
@@ -817,6 +974,7 @@
 				B2D4180B22534D3D0044A422 /* BannerModelView.swift in Sources */,
 				B27C42462249C33F0089D2C2 /* RoomNormalModel.swift in Sources */,
 				B27C424C224A03710089D2C2 /* FollowTopView.swift in Sources */,
+				B26A6756226458CA00A6BA7E /* ReSwiftViewController.swift in Sources */,
 				B27C4251224A09340089D2C2 /* FollowNormalCell.swift in Sources */,
 				B27C4254224A0C710089D2C2 /* UITableView-Extension.swift in Sources */,
 			);
@@ -969,6 +1127,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN3NGE85MU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DouyuSwift/Supporting File/DouyuSwift_Header.pch";
 				INFOPLIST_FILE = DouYuSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -993,6 +1153,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN3NGE85MU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DouyuSwift/Supporting File/DouyuSwift_Header.pch";
 				INFOPLIST_FILE = DouYuSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1001,6 +1163,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoomsun.DouYuSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DouYuSwift/Classes-OC/DouYuSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -17,11 +17,27 @@ class NewMainViewController: BaseViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        title = "新的首页界面"
         setupUI()
-        
         loadData()
     }
+    
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//
+//
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+//        self.navigationController?.navigationBar.shadowImage = nil
+//
+//
+//    }
+    
 }
 
 
@@ -29,6 +45,9 @@ extension NewMainViewController {
     override func setupUI() {
         super.setupUI()
         setupTopCollectionView()
+        
+        isShownavigationBar = true
+                
     }
     
     private func setupTopCollectionView() {

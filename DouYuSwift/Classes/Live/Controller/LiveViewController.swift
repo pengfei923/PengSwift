@@ -73,6 +73,7 @@ extension LiveViewController {
             self.loadData()
             self.tableView.mj_header .endRefreshing()
         })
+        
     }
 }
 

@@ -10,7 +10,8 @@ import UIKit
 
 extension UIButton {
     convenience init(title:String,frame:CGRect,corner:CGFloat = 0) {
-        self.init(frame: frame)
+        self.init(type: .system)
+        self.frame = frame
         setTitle(title, for: .normal)
         setTitleColor(UIColor.white, for: .normal)
         setTitleColor(UIColor.lightGray, for: .highlighted)
@@ -18,4 +19,8 @@ extension UIButton {
         self.layer.masksToBounds = true
         backgroundColor = UIColor.red
     }
+    
+    
+    
 }
+

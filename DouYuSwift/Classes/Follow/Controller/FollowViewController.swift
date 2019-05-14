@@ -17,12 +17,18 @@ class FollowViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         tableView.register(UINib(nibName: "FollowNormalCell", bundle: nil), forCellReuseIdentifier: "FollowNormalCell")
         return tableView
     }()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "我的";
+        
         setupUI()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
 }
 // UI界面的设置
 extension FollowViewController {
@@ -44,7 +50,7 @@ extension FollowViewController {
         if section == 0 {
             return 1
         } else {
-            return 2
+            return 4
         }
     }
     
@@ -61,6 +67,12 @@ extension FollowViewController {
             }else if indexPath.row == 1 {
                 cell.leftLabel.text = "collection"
                 cell.rightLabel.text = "collection详情"
+            }else if indexPath.row == 2 {
+                cell.leftLabel.text = "ReSwift"
+                cell.rightLabel.text = "ReSwift详情"
+            }else if indexPath.row == 3 {
+                cell.leftLabel.text = "注册"
+                cell.rightLabel.text = "注册控制器"
             }else {
                 cell.leftLabel.text = "hello"
                 cell.rightLabel.text = "ketty"
@@ -84,6 +96,14 @@ extension FollowViewController {
                 let newCollectionVC = NewCollectionViewController()
                 newCollectionVC.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(newCollectionVC, animated: true)
+            }else if indexPath.row == 2 {
+                let reSwift = ReSwiftViewController()
+                reSwift.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(reSwift, animated: true)
+            }else if indexPath.row == 3 {
+                let newregVC = NewRegisterViewController()
+                newregVC.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(newregVC, animated: true)
             }
         }
     }

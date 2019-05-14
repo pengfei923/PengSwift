@@ -5,6 +5,8 @@ target 'DouYuSwift' do
   pod 'Alamofire' #网络请求
   pod 'Kingfisher' #图片加载
   pod 'RxSwift' #
+  pod 'RxCocoa'
+  pod 'RxDataSources'
   pod 'Presentr' #弹出框
   pod 'Material' #
   pod 'MJRefresh' # 刷新控件
@@ -13,4 +15,12 @@ target 'DouYuSwift' do
   pod 'PromiseKit'
   pod 'OpenCV'
   pod 'PGDatePicker'
+  pod 'RxAlamofire'
+  pod 'PromiseKit'
+  pod 'SwiftDate'
+  pod 'AAInfographics'
+  pod 'IQKeyboardManagerSwift'
+#  pod 'SideMenu'
+  pod 'SwiftyJSON'
+#  pod 'HandyJSON'
 end

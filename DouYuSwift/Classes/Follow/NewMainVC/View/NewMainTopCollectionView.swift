@@ -32,7 +32,7 @@ class NewMainTopCollectionView: UIView {
     
     class func setupNewMainTopCollection() -> NewMainTopCollectionView {
         let view = Bundle.main.loadNibNamed("NewMainTopCollectionView", owner: nil, options: nil)?.first as! NewMainTopCollectionView
-        view.frame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: 180)
+        view.frame = CGRect(x: 0, y: 0, width: kScreenW, height: 180)
         
         view.setCollectionView()
         view.setPageController()
